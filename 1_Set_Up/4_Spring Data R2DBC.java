@@ -4,15 +4,20 @@ Using Spring Data R2DBC is similar to using other Spring Data modules but tailor
    Add the necessary dependencies to your project's build configuration. For example, if you're using Spring Boot, you can include the following dependencies:
 
    ```xml
-   <dependency>
-       <groupId>org.springframework.boot</groupId>
-       <artifactId>spring-boot-starter-data-r2dbc</artifactId>
-   </dependency>
-   <dependency>
-       <groupId>io.r2dbc</groupId>
-       <artifactId>r2dbc-h2</artifactId> <!-- Use the appropriate R2DBC driver for your database -->
-   </dependency>
+   		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-r2dbc</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>r2dbc-postgresql</artifactId>
+			<version>1.0.2.RELEASE</version>               <!-- Use the appropriate R2DBC driver for your database -->
+		</dependency>
+
    ```
+
 
 2. **Configure Database Connection**:
    Configure the database connection properties in your application's configuration file (e.g., `application.properties` or `application.yml`).
