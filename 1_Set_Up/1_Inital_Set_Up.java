@@ -8,7 +8,7 @@ To start developing an application using Spring WebFlux, you can follow these st
 
 2. **Add Additional Dependencies**:
    Depending on your application's requirements, you might need to add additional dependencies. Common dependencies include:
-   - Spring Data (e.g., Spring Data MongoDB, Spring Data JPA) if you're working with databases.
+   - Spring Data (e.g., Reactive MongoDBB, Spring Data R2DBC:) if you're working with databases using webflux.
    - Spring Security if you need security features.
    - Any other dependencies for specific functionalities.
 
